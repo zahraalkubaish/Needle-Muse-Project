@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Instructor Profile - Meet our talented fashion instructors at Needle & Muse.">
+    <meta name="author" content="Needle & Muse">
+    <meta name="theme-color" content="#F2E8D5">
+    <title>Instructor Name | Needle &amp; Muse</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='3' y='70' font-family='Georgia' font-size='88' fill='%23B8894A'%3EN%3C/text%3E%3Ctext x='27' y='91' font-family='Georgia' font-size='88' fill='%23B8894A'%3EM%3C/text%3E%3Cpath d='M 5,58 C 17,42 31,49 42,58 C 52,67 60,55 69,44 C 77,34 84,30 92,30' fill='none' stroke='%23E88BA0' stroke-width='1.5'/%3E%3C/svg%3E">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Oswald:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== Skip Link ===== -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ==================================================
+         [1] NAVBAR
+         ================================================== -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="index.html" class="logo-navbar" aria-label="Needle and Muse - Home">
+                <span class="logo-text">NEEDLE &amp; MUSE</span>
+            </a>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="offerings.html">Offerings</a></li>
+                    <li><a href="about.html" class="active" aria-current="page">About Us</a></li>
+                    <li><a href="member-dashboard.html">Member Dashboard</a></li>
+                    <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- ==================================================
+         [2] BREADCRUMB
+         ================================================== -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span aria-hidden="true">▶</span>
+        <a href="about.html">About Us</a>
+        <span aria-hidden="true">▶</span>
+        <span aria-current="page">Instructor Name</span>
+    </nav>
+
+    <!-- ==================================================
+         [3] PAGE HEADER
+         ================================================== -->
+    <header class="page-header">
+        <h1>Instructor Name</h1>
+        <p class="page-subtitle">
+            Paejos sjson hslwmv lwajsk lemst hcbbe hdtuka duhowd hdkajd dhks dg;wsi; 
+            ghnisbcu whemsu hesul shshq;h;nd shidbnjrd. Paejos sjson hslwmv lwajsk 
+            lemst hcbbe hdtuka duhowd hdkajd dhks dgu.
+        </p>
+    </header>
+
+    <!-- ==================================================
+         [4] MAIN CONTENT
+         ================================================== -->
+    <main id="main-content">
+
+        <!-- ================================================
+             [4.1] INSTRUCTOR TABLE
+             ================================================ -->
+        <section class="profile-section" aria-labelledby="profile-heading">
+
+            <h2 id="profile-heading" class="sr-only">Instructor Details</h2>
+
+            <table class="profile-table">
+
+                <!-- Row 1: Name spans ALL columns (اسم المدرب فوق الجدول) -->
+                <thead>
+                    <tr>
+                        <th colspan="6" scope="colgroup" class="profile-name-header">
+                            Instructor Name
+                        </th>
+                    </tr>
+                    <!-- Row 2: Column Headers -->
+                    <tr>
+                        <th scope="col">Photo</th>
+                        <th scope="col">Date of Birth</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Education</th>
+                        <th scope="col">Skills</th>
+                        <th scope="col">Area of Expertise</th>
+                    </tr>
+                </thead>
+
+                <!-- Row 3: Data -->
+                <tbody>
+                    <tr>
+                        <td class="profile-photo-cell" data-label="Photo">
+                            <img 
+                                src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&q=80" 
+                                alt="Portrait of Instructor Name"
+                                loading="lazy"
+                                width="120"
+                                height="120">
+                        </td>
+                        <td data-label="Date of Birth">
+                            <time datetime="1990-05-12">12/05/1990</time>
+                        </td>
+                        <td data-label="Email">
+                            <a href="mailto:name@needlemuse.com" aria-label="Send email to Instructor Name">
+                                name@needlemuse.com
+                            </a>
+                        </td>
+                        <td data-label="Education">B.A. Fashion Design</td>
+                        <td data-label="Skills">Draping, Sketching</td>
+                        <td data-label="Area of Expertise">Pattern Making</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <!-- ================================================
+             [4.2] RATE THIS INSTRUCTOR
+             ================================================ -->
+        <section class="rating-section" aria-labelledby="rate-heading">
+            <div class="rating-box">
+                <h2 id="rate-heading" class="rating-title">Rate this instructor</h2>
+
+                <div class="stars-rating" role="radiogroup" aria-labelledby="rate-heading">
+                    <input type="radio" id="star5" name="rating" value="5" class="sr-only">
+                    <label for="star5" class="star" aria-label="5 stars">★</label>
+
+                    <input type="radio" id="star4" name="rating" value="4" class="sr-only" checked>
+                    <label for="star4" class="star" aria-label="4 stars">★</label>
+
+                    <input type="radio" id="star3" name="rating" value="3" class="sr-only">
+                    <label for="star3" class="star" aria-label="3 stars">★</label>
+
+                    <input type="radio" id="star2" name="rating" value="2" class="sr-only">
+                    <label for="star2" class="star" aria-label="2 stars">★</label>
+
+                    <input type="radio" id="star1" name="rating" value="1" class="sr-only">
+                    <label for="star1" class="star" aria-label="1 star">★</label>
+                </div>
+
+                <p class="rating-info" role="status" aria-live="polite">
+                    <strong>4.0</strong> average · based on <strong>12</strong> ratings
+                </p>
+            </div>
+        </section>
+
+        <!-- ================================================
+             [4.3] OTHER INSTRUCTORS
+             ================================================ -->
+        <section class="other-instructors-section" aria-labelledby="other-heading">
+            <h2 id="other-heading" class="other-instructors-title">Other Instructors</h2>
+
+            <div class="other-instructors-grid">
+
+                <article class="other-instructor-card">
+                    <div class="other-instructor-image">
+                        <img 
+                            src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=400&q=80" 
+                            alt="Portrait of Omar Khalid, Fashion Illustration instructor"
+                            loading="lazy"
+                            width="400"
+                            height="400">
+                    </div>
+                    <h3><a href="profile.html">Omar Khalid</a></h3>
+                    <p>Fashion Illustration</p>
+                </article>
+
+                <article class="other-instructor-card">
+                    <div class="other-instructor-image">
+                        <img 
+                            src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=400&q=80" 
+                            alt="Portrait of Noura Al-Sabah, Sustainable Fashion instructor"
+                            loading="lazy"
+                            width="400"
+                            height="400">
+                    </div>
+                    <h3><a href="profile.html">Noura Al-Sabah</a></h3>
+                    <p>Sustainable Fashion</p>
+                </article>
+
+                <article class="other-instructor-card">
+                    <div class="other-instructor-image">
+                        <img 
+                            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&q=80" 
+                            alt="Portrait of Faisal Al-Otaibi, Textile Design instructor"
+                            loading="lazy"
+                            width="400"
+                            height="400">
+                    </div>
+                    <h3><a href="profile.html">Faisal Al-Otaibi</a></h3>
+                    <p>Textile Design</p>
+                </article>
+
+            </div>
+
+            <!-- Back Link -->
+            <div class="back-link">
+                <a href="about.html" aria-label="Go back to About Us page">
+                    <span aria-hidden="true">←</span> Back to About Us
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ==================================================
+         [5] FOOTER
+         ================================================== -->
+    <footer>
+        <div class="footer-content">
+
+            <a href="index.html" class="logo-footer" aria-label="Needle and Muse - Home">
+                <span class="logo-text">NEEDLE &amp; MUSE</span>
+            </a>
+
+            <p class="footer-tagline">FASHION • CRAFT • MUSE</p>
+
+            <div class="footer-social" aria-label="Social media links">
+
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                        <rect x="2" y="2" width="20" height="20" rx="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+                    </svg>
+                </a>
+
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                        <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12"/>
+                    </svg>
+                </a>
+
+            </div>
+
+            <address class="footer-info">
+                <a href="mailto:hello@needlemuse.com">hello@needlemuse.com</a>
+                <span class="divider" aria-hidden="true">◆</span>
+                <a href="tel:+966110000000">+966 11 000 0000</a>
+                <span class="divider" aria-hidden="true">◆</span>
+                Riyadh, Saudi Arabia
+            </address>
+
+            <p class="footer-copy">&copy; 2026 Needle &amp; Muse. All rights reserved.</p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
