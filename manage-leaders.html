@@ -1,198 +1,371 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en-US" dir="ltr">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Manager Leaders and instructors control">
-    <meta name="author" content="Needle & Muse">
+    <meta name="description" content="Manage Activity Leaders and Instructors at Needle &amp; Muse.">
+    <meta name="author" content="Needle &amp; Muse">
     <meta name="theme-color" content="#F5F0E5">
     <title>Manage Activity Leaders and Instructors | Needle &amp; Muse</title>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='3' y='70' font-family='Georgia' font-size='88' fill='%237D1A2E'%3EN%3C/text%3E%3Ctext x='27' y='91' font-family='Georgia' font-size='88' fill='%237D1A2E'%3EM%3C/text%3E%3Cpath d='M 5,58 C 17,42 31,49 42,58 C 52,67 60,55 69,44 C 77,34 84,30 92,30' fill='none' stroke='%23A68548' stroke-width='1.5'/%3E%3C/svg%3E">
-
-    <!-- Google Fonts -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20100%20100%27%3E%3Crect%20width%3D%27100%27%20height%3D%27100%27%20rx%3D%2714%27%20fill%3D%27%23EFE9DD%27%2F%3E%3Ctext%20x%3D%2715%27%20y%3D%2766%27%20font-family%3D%27Georgia%2Cserif%27%20font-size%3D%2754%27%20fill%3D%27%232B221E%27%3EN%3C%2Ftext%3E%3Ctext%20x%3D%2743%27%20y%3D%2778%27%20font-family%3D%27Georgia%2Cserif%27%20font-size%3D%2754%27%20fill%3D%27%232B221E%27%3EM%3C%2Ftext%3E%3Cline%20x1%3D%2748%27%20y1%3D%2712%27%20x2%3D%2748%27%20y2%3D%2786%27%20stroke%3D%27%237D1A2E%27%20stroke-width%3D%272.4%27%2F%3E%3Cellipse%20cx%3D%2748%27%20cy%3D%2716%27%20rx%3D%272%27%20ry%3D%274.5%27%20fill%3D%27none%27%20stroke%3D%27%237D1A2E%27%20stroke-width%3D%271.8%27%2F%3E%3Cpath%20d%3D%27M48%2C16%20C75%2C26%2075%2C44%2048%2C50%20C24%2C56%2026%2C82%2052%2C78%27%20fill%3D%27none%27%20stroke%3D%27%23A68548%27%20stroke-width%3D%271.8%27%2F%3E%3C%2Fsvg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&amp;family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <script src="theme.js"></script>
+    <script src="mngLeaders.js"></script>
+  </head>
+  <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-
     <!-- Navbar -->
     <header class="navbar">
-        <div class="nav-container">
-            <a href="HomePage.html" class="logo-navbar" aria-label="Needle and Muse - Home">
-                <span class="logo-text">NEEDLE &amp; MUSE</span>
-            </a>
-            <nav aria-label="Main navigation">
-                <ul class="nav-links">
-                    <li><a href="HomePage.html">Home</a></li>
-                    <li><a href="offerings.html">Offerings</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="member-dashboard.html">Member Dashboard</a></li>
-                    <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="nav-container">
+        <a href="index.html" class="logo-navbar" aria-label="Needle and Muse - Home">
+          <span class="logo-text">NEEDLE &amp; MUSE</span>
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </label>
+        <nav class="nav-drawer" aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="offerings.html">Offerings</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="member-dashboard.html">Member Dashboard</a></li>
+            <li><a href="manager-dashboard.html" class="active" aria-current="page">Manager Dashboard</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-backdrop"></label>
+      </div>
     </header>
-
     <main id="main-content">
-         
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="HomePage.html">Home</a>
-        <span aria-hidden="true">▶</span>
-        <a href="manager-dashboard.html">Manager Manager</a>
-        <span aria-hidden="true">▶</span>
-        <span aria-current="page">Manage Activity Leaders and Instructors</span>
-    </nav>
-    <h1>Manage Activity Leaders and Instructors</h1>
-    <a href="manager-dashboard.html">←back to dashboard</a>
-    <hr>
+      <div class="top-meta-bar">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">HOME</a>
+          <span aria-hidden="true">▶</span>
+          <a href="manager-dashboard.html">MANAGER DASHBOARD</a>
+          <span aria-hidden="true">▶</span>
+          <span aria-current="page">MANAGE ACTIVITY LEADERS AND INSTRUCTORS</span>
+        </nav>
+        <a href="manager-dashboard.html" class="back-inline-link">← BACK TO DASHBOARD</a>
+      </div>
 
-    <section>
-       <h2 class="sr-only">Current Leaders and Instructors</h2>
-      <form id="act-lead" action="#" method="POST">
-         <label><input type="checkbox" id="select-all"> Select All</label>
-         <input type="submit" value="Delete selected">
+      <header class="page-header">
+        <h1>MANAGE ACTIVITY LEADERS AND INSTRUCTORS</h1>
+      </header>
 
-          <ul>
-           <li>
-             <input type="checkbox" name="leader" value="le1" aria-label="Select Leader 1">
-             <img src="images/leader1.jpg" alt="Leader 1" width="60" height="60">
-               <div class="leader-info">
-                  <span class="leader-name">Name</span>
-                  <p>Lorem ipsum dolor sit amet.</p>
-               </div>
-               <div class="leader-actions">
-                   <button type="button">View</button>
-                   <button type="submit" name="delete" value="le1" class="delete-btn">Delete</button>
-               </div>
-          </li>
+      <div class="dashboard-container">
 
-          <li>
-             <input type="checkbox" name="leader" value="le2" aria-label="Select Leader 2">
-             <img src="images/leader2.jpg" alt="Leader 2" width="60" height="60">
-               <div class="leader-info">
-                  <span class="leader-name">Name</span>
-                  <p>Lorem ipsum dolor sit amet.</p>
-               </div>
-               <div class="leader-actions">
-                   <button type="button">View</button>
-                   <button type="submit" name="delete" value="le2" class="delete-btn">Delete</button>
-               </div>
-          </li>
-
-          <li>
-             <input type="checkbox" name="leader" value="le3" aria-label="Select Leader 3">
-             <img src="images/leader3.jpg" alt="Leader 3" width="60" height="60">
-               <div class="leader-info">
-                  <span class="leader-name">Name</span>
-                  <p>Lorem ipsum dolor sit amet.</p>
-               </div>
-               <div class="leader-actions">
-                   <button type="button">View</button>
-                   <button type="submit" name="delete" value="le3" class="delete-btn">Delete</button>
-               </div>
-          </li>
-
-          <li>
-             <input type="checkbox" name="leader" value="le4" aria-label="Select Leader 4">
-             <img src="images/leader4.jpg" alt="Leader 4" width="60" height="60">
-               <div class="leader-info">
-                  <span class="leader-name">Name</span>
-                  <p>Lorem ipsum dolor sit amet.</p>
-               </div>
-               <div class="leader-actions">
-                   <button type="button">View</button>
-                   <button type="submit" name="delete" value="le4" class="delete-btn">Delete</button>
-               </div>
-          </li>
-
-      
-        </ul>
-      </form>
-    </section>
-
-   <section>
-  <h2>Add New Leader</h2>
-  <form id="add-lead" action="#" method="POST" enctype="multipart/form-data">
-    <fieldset>
-      <legend>Leader Information</legend>
-
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="photo">Photo:</label>
-      <input type="file" id="photo" name="photo" accept="image/*">
-
-      <label for="dob">Date of Birth:</label>
-      <input type="date" id="dob" name="dob" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="exp">Area of Expertise:</label>
-      <input type="text" id="exp" name="exp" required>
-
-      <label for="skills">Skills:</label>
-      <input type="text" id="skills" name="skills" required>
-
-      <label for="edu">Education:</label>
-      <input type="text" id="edu" name="edu" required>
-
-      <input type="submit" value="Add">
-      
-    </fieldset>
-  </form>
-</section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <a href="HomePage.html" class="logo-footer" aria-label="Needle and Muse - Home">
-                <span class="logo-text">NEEDLE &amp; MUSE</span>
-            </a>
-
-            <p class="footer-tagline">FASHION • CRAFT • MUSE</p>
-
-            <div class="footer-social" aria-label="Social media links">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                        <rect x="2" y="2" width="20" height="20" rx="5"/>
-                        <circle cx="12" cy="12" r="4"/>
-                        <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
-                    </svg>
-                </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
-                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                    </svg>
-                </a>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
-                        <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12"/>
-                    </svg>
-                </a>
+        <!-- Section 1: Form (#act-lead) displaying all available activity leaders with checkboxes for deletion -->
+        <section class="leaders-list-section" aria-labelledby="current-leaders-heading">
+          <h2 id="current-leaders-heading" class="sr-only">Current Leaders and Instructors</h2>
+          <form id="act-lead" action="#" method="post">
+            <div class="leaders-bulk-bar">
+              <label for="select-all-leaders" class="select-all-label">
+                <input type="checkbox" id="select-all-leaders" name="select-all">
+                <span>SELECT ALL</span>
+              </label>
+              <input type="submit" value="Delete Selected" class="btn-danger">
             </div>
 
-            <address class="footer-info">
-                <a href="mailto:hello@needlemuse.com">hello@needlemuse.com</a>
-                <span class="divider" aria-hidden="true">◆</span>
-                <a href="tel:+966110000000">+966 11 000 0000</a>
-                <span class="divider" aria-hidden="true">◆</span>
-                Riyadh, Saudi Arabia
-            </address>
+            <ul class="leaders-manage-list">
+              <li class="leader-row">
+                <div class="leader-check-wrap">
+                  <input
+                    type="checkbox"
+                    name="leader"
+                    value="le1"
+                    id="leader-1"
+                    aria-label="Select Layla Al-Rashid">
+                </div>
+                <img
+                  src="images/leader1.jpg"
+                  alt="Portrait of Layla Al-Rashid"
+                  width="72"
+                  height="72"
+                  class="leader-thumb">
+                <div class="leader-info">
+                  <label for="leader-1" class="leader-name">Layla Al-Rashid</label>
+                  <p>Sewing &amp; Pattern Making — B.A. Fashion Design, specializing in couture draping and tailoring.</p>
+                </div>
+                <div class="leader-actions">
+                  
+                  <button
+                    type="submit"
+                    name="delete"
+                    value="le1"
+                    class="delete-btn"
+                  >
+                    Delete
+                  </button>
+                </div>
+              </li>
 
-            <p class="footer-copy">&copy; 2026 Needle &amp; Muse. All rights reserved.</p>
+              <li class="leader-row">
+                <div class="leader-check-wrap">
+                  <input
+                    type="checkbox"
+                    name="leader"
+                    value="le2"
+                    id="leader-2"
+                    aria-label="Select Omar Khalid">
+                </div>
+                <img
+                  src="images/leader2.jpg"
+                  alt="Portrait of Omar Khalid"
+                  width="72"
+                  height="72"
+                  class="leader-thumb">
+                <div class="leader-info">
+                  <label for="leader-2" class="leader-name">Omar Khalid</label>
+                  <p>Fashion Illustration — Editorial figure sketching, watercolor rendering, and digital croquis.</p>
+                </div>
+                <div class="leader-actions">
+                 
+                  <button
+                    type="submit"
+                    name="delete"
+                    value="le2"
+                    class="delete-btn"
+                  >
+                    Delete
+                  </button>
+                </div>
+              </li>
+
+              <li class="leader-row">
+                <div class="leader-check-wrap">
+                  <input
+                    type="checkbox"
+                    name="leader"
+                    value="le3"
+                    id="leader-3"
+                    aria-label="Select Noura Al-Sabah">
+                </div>
+                <img
+                  src="images/leader3.jpg"
+                  alt="Portrait of Noura Al-Sabah"
+                  width="72"
+                  height="72"
+                  class="leader-thumb">
+                <div class="leader-info">
+                  <label for="leader-3" class="leader-name">Noura Al-Sabah</label>
+                  <p>Sustainable Fashion — Ethical textile sourcing, circular design, and botanical dyeing.</p>
+                </div>
+                <div class="leader-actions">
+                  
+                  <button
+                    type="submit"
+                    name="delete"
+                    value="le3"
+                    class="delete-btn"
+                  >
+                    Delete
+                  </button>
+                </div>
+              </li>
+
+              <li class="leader-row">
+                <div class="leader-check-wrap">
+                  <input
+                    type="checkbox"
+                    name="leader"
+                    value="le4"
+                    id="leader-4"
+                    aria-label="Select Faisal Al-Otaibi">
+                </div>
+                <img
+                  src="images/leader4.jpg"
+                  alt="Portrait of Faisal Al-Otaibi"
+                  width="72"
+                  height="72"
+                  class="leader-thumb">
+                <div class="leader-info">
+                  <label for="leader-4" class="leader-name">Faisal Al-Otaibi</label>
+                  <p>Textile Design — Surface print creation, jacquard weaving, and luxury silk embroidery.</p>
+                </div>
+                <div class="leader-actions">
+                  
+                  <button
+                    type="submit"
+                    name="delete"
+                    value="le4"
+                    class="delete-btn"
+                  >
+                    Delete
+                  </button>
+                </div>
+              </li>
+
+              <li class="leader-row">
+                <div class="leader-check-wrap">
+                  <input
+                    type="checkbox"
+                    name="leader"
+                    value="le5"
+                    id="leader-5"
+                    aria-label="Select Sara Al-Mutairi">
+                </div>
+                <img
+                  src="images/leader5.jpg"
+                  alt="Portrait of Sara Al-Mutairi"
+                  width="72"
+                  height="72"
+                  class="leader-thumb">
+                <div class="leader-info">
+                  <label for="leader-5" class="leader-name">Sara Al-Mutairi</label>
+                  <p>Fashion Styling — Personal color analysis, capsule wardrobe curation, and editorial styling.</p>
+                </div>
+                <div class="leader-actions">
+                  
+                  <button
+                    type="submit"
+                    name="delete"
+                    value="le5"
+                    class="delete-btn"
+                  >
+                    Delete
+                  </button>
+                </div>
+              </li>
+
+              <li class="leader-row">
+                <div class="leader-check-wrap">
+                  <input
+                    type="checkbox"
+                    name="leader"
+                    value="le6"
+                    id="leader-6"
+                    aria-label="Select Yousef Al-Harbi">
+                </div>
+                <img
+                  src="images/leader6.jpg"
+                  alt="Portrait of Yousef Al-Harbi"
+                  width="72"
+                  height="72"
+                  class="leader-thumb">
+                <div class="leader-info">
+                  <label for="leader-6" class="leader-name">Yousef Al-Harbi</label>
+                  <p>Costume Design — Historical garment construction, theatrical couture, and structural tailoring.</p>
+                </div>
+                <div class="leader-actions">
+                  
+                  <button
+                    type="submit"
+                    name="delete"
+                    value="le6"
+                    class="delete-btn"
+                  >
+                    Delete
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </form>
+        </section>
+
+        <!-- Section 2: Form (#add-lead) for adding a new activity leader or instructor -->
+        <section class="form-card add-leader-section" aria-labelledby="add-leader-heading">
+          <h2 id="add-leader-heading" class="form-section-title">ADD NEW ACTIVITY LEADER OR INSTRUCTOR</h2>
+          <form
+            id="add-lead"
+            action="#"
+            method="post"
+            enctype="multipart/form-data"
+            class="member-form"
+            novalidate
+          >
+            <fieldset class="clean-fieldset">
+              <legend class="sr-only">Leader Information</legend>
+              <div class="form-group">
+                <label for="name">1. NAME</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Hessa Al-Sudairi" required>
+              </div>
+
+              <div class="form-group">
+                <label for="photo">2. PHOTO</label>
+                <div class="file-upload">
+                  <input type="file" id="photo" name="photo" accept="image/*">
+                  <span class="file-upload-text">UPLOAD PHOTO</span>
+                </div>
+              </div>
+
+              <div class="form-grid-two">
+                <div class="form-group">
+                  <label for="dob">3. DATE OF BIRTH</label>
+                  <input type="date" id="dob" name="dob" value="1992-08-24" lang="en-US" dir="ltr" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">4. EMAIL</label>
+                  <input type="email" id="email" name="email" placeholder="instructor@needlemuse.com" required>
+                </div>
+              </div>
+
+              <div class="form-grid-two">
+                <div class="form-group">
+                  <label for="exp">5. AREA OF EXPERTISE</label>
+                  <input type="text" id="exp" name="exp" placeholder="e.g. Haute Couture Embroidery" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="skills">6. SKILLS</label>
+                  <input type="text" id="skills" name="skills" placeholder="e.g. Tambour Beading, Silk Shading" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="edu">7. EDUCATION</label>
+                <input type="text" id="edu" name="edu" placeholder="e.g. M.A. in Textile Design" required>
+              </div>
+
+              <div class="form-submit">
+                <input type="submit" value="Add Leader" class="btn-primary">
+              </div>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <a href="index.html" class="logo-footer" aria-label="Needle and Muse - Home">
+          <span class="logo-text">NEEDLE &amp; MUSE</span>
+        </a>
+        <div class="footer-social">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+            </svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12" />
+            </svg>
+          </a>
         </div>
+        <address class="footer-info">
+          <a href="mailto:hello@needlemuse.com">hello@needlemuse.com</a>
+          <span class="divider" aria-hidden="true">◆</span>
+          <a href="tel:+966110000000">+966 11 000 0000</a>
+          <span class="divider" aria-hidden="true">◆</span>
+          Riyadh, Saudi Arabia
+        </address>
+        <p class="footer-copy">
+          &copy; Needle and Muse 2026. All rights reserved.
+        </p>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>

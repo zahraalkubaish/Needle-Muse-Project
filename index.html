@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Needle &amp; Muse - A creative fashion club connecting Club Members, Activity Leaders and Instructors, and Club Managers in Riyadh.">
+    <meta name="author" content="Needle &amp; Muse">
+    <meta name="theme-color" content="#F5F0E5">
+    <title>Needle &amp; Muse | Home</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20100%20100%27%3E%3Crect%20width%3D%27100%27%20height%3D%27100%27%20rx%3D%2714%27%20fill%3D%27%23EFE9DD%27%2F%3E%3Ctext%20x%3D%2715%27%20y%3D%2766%27%20font-family%3D%27Georgia%2Cserif%27%20font-size%3D%2754%27%20fill%3D%27%232B221E%27%3EN%3C%2Ftext%3E%3Ctext%20x%3D%2743%27%20y%3D%2778%27%20font-family%3D%27Georgia%2Cserif%27%20font-size%3D%2754%27%20fill%3D%27%232B221E%27%3EM%3C%2Ftext%3E%3Cline%20x1%3D%2748%27%20y1%3D%2712%27%20x2%3D%2748%27%20y2%3D%2786%27%20stroke%3D%27%237D1A2E%27%20stroke-width%3D%272.4%27%2F%3E%3Cellipse%20cx%3D%2748%27%20cy%3D%2716%27%20rx%3D%272%27%20ry%3D%274.5%27%20fill%3D%27none%27%20stroke%3D%27%237D1A2E%27%20stroke-width%3D%271.8%27%2F%3E%3Cpath%20d%3D%27M48%2C16%20C75%2C26%2075%2C44%2048%2C50%20C24%2C56%2026%2C82%2052%2C78%27%20fill%3D%27none%27%20stroke%3D%27%23A68548%27%20stroke-width%3D%271.8%27%2F%3E%3C%2Fsvg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&amp;family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet">
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="home.js" defer></script>
+  </head>
+  <body class="homepage">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo-navbar" aria-label="Needle and Muse - Home">
+          <span class="logo-text">NEEDLE &amp; MUSE</span>
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </label>
+        <nav class="nav-drawer" aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+            <li><a href="offerings.html">Offerings</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="member-dashboard.html">Member Dashboard</a></li>
+            <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-backdrop"></label>
+      </div>
+    </header>
+    <main id="main-content">
+      <!-- Home introduction -->
+      <section class="welcome" aria-labelledby="welcome-heading">
+        <div class="welcome-content">
+          <div class="welcome-text">
+            <h1 id="welcome-heading" tabindex="-1">Where Fashion Begins!</h1>
+            <p>
+              Needle &amp; Muse is a university fashion club platform built for three dedicated audiences: <strong>Club Members</strong>, <strong>Activity Leaders and Instructors</strong>, and <strong>Club Managers</strong> who share a passion for fashion, creativity, and self-expression.
+            </p>
+            <p>
+              <strong>Club Members</strong>—university students ranging from beginners curious about sewing to aspiring designers—explore club offerings, participate in hands-on styling, sketching, and garment workshops, develop practical skills, and evaluate their learning experiences.
+            </p>
+            <p>
+              <strong>Activity Leaders and Instructors</strong> share their expertise, lead studio workshops, and contribute to the club's creative learning experiences, while <strong>Club Managers</strong> organize offerings, coordinate instructors, and manage club activities.
+            </p>
+            <button id="theme-toggle" class="home-control" type="button">Dark Mode</button>
+          </div>
+          <div class="welcome-image">
+            <img
+              src="images/design.jpg"
+              alt="Fashion design workshop preview"
+              width="800"
+              height="550">
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Offerings (Wireframe Page 8: 3 Flexbox cards + :hover reveal + "View Details" buttons) -->
+      <section class="featured" aria-labelledby="featured-heading">
+        <h2 id="featured-heading" class="section-title">Featured Club Offerings</h2>
+        <div class="offerings-container">
+          <!-- Offering 1 -->
+          <div class="offering" tabindex="0">
+            <div class="offering-img-wrap">
+              <img
+                src="images/styling.jpg"
+                alt="Styling Experience workshop preview"
+                loading="lazy"
+                width="800"
+                height="550">
+            </div>
+            <div class="offering-body">
+              <h3>Styling Experience</h3>
+              <p>
+                Discover your personal style and learn how to create fashionable,
+                editorial-ready outfits.
+              </p>
+              <div class="hover-info">
+                <p class="hover-price">Price: 0 SAR (free) · Rating: 4/5 ★</p>
+                <p class="hover-detail">Learn color theory, capsule styling techniques, and outfit coordination with Sara Al-Mutairi.</p>
+              </div>
+              <a href="offerings.html" class="button">View Details</a>
+            </div>
+          </div>
+
+          <!-- Offering 2 -->
+          <div class="offering" tabindex="0">
+            <div class="offering-img-wrap">
+              <img
+                src="images/sewing.jpg"
+                alt="Sewing Basics Class workshop preview"
+                loading="lazy"
+                width="800"
+                height="550">
+            </div>
+            <div class="offering-body">
+              <h3>Sewing Basics Class</h3>
+              <p>
+                Learn essential sewing techniques and develop practical garment construction skills.
+              </p>
+              <div class="hover-info">
+                <p class="hover-price">Price: 100 SAR · Rating: 4/5 ★</p>
+                <p class="hover-detail">Perfect for beginners interested in stitching, seam finishing, and pattern cutting.</p>
+              </div>
+              <a href="offerings.html" class="button">View Details</a>
+            </div>
+          </div>
+
+          <!-- Offering 3 -->
+          <div class="offering" tabindex="0">
+            <div class="offering-img-wrap">
+              <img
+                src="images/sketching.jpg"
+                alt="Fashion Sketching Workshop preview"
+                loading="lazy"
+                width="800"
+                height="550">
+            </div>
+            <div class="offering-body">
+              <h3>Fashion Sketching Workshop</h3>
+              <p>
+                Explore fashion illustration and learn how to sketch your own runway designs.
+              </p>
+              <div class="hover-info">
+                <p class="hover-price">Price: 150 SAR · Rating: 4/5 ★</p>
+                <p class="hover-detail">Practice figure proportions, fabric rendering, and designing expressive fashion pieces.</p>
+              </div>
+              <a href="offerings.html" class="button">View Details</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-workshop-guide">
+        <table>
+          <caption class="section-title">Find a Workshop by Interest</caption>
+          <thead>
+            <tr><th scope="col">If you want to learn…</th><th scope="col">Try this workshop</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">How to coordinate outfits and colors</th>
+              <td><a href="offerings.html#styling-experience">Styling Experience</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Basic sewing and stitching techniques</th>
+              <td><a href="offerings.html#sewing-basics">Sewing Basics Class</a></td>
+            </tr>
+            <tr>
+              <th scope="row">How to sketch fashion designs</th>
+              <td><a href="offerings.html#fashion-sketching">Fashion Sketching Workshop</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Extra Section: Latest Fashion News (Wireframe Page 8) -->
+      <section class="news" aria-labelledby="news-heading">
+        <h2 id="news-heading" class="section-title">Latest Fashion News</h2>
+        <div class="news-content">
+          <div class="news-image">
+            <img
+              src="images/news.jpg"
+              alt="Annual Autumn Atelier and Sustainable Runway Showcase"
+              loading="lazy"
+              width="900"
+              height="620">
+          </div>
+          <div class="news-text">
+            <span class="news-date"><time datetime="2026-09-24">SEP 24, 2026</time></span>
+            <h3>News 1: Annual Autumn Atelier &amp; Sustainable Runway Showcase</h3>
+            <p>
+              Discover the latest fashion trends, creative ideas, and updates
+              from the world of fashion.
+            </p>
+            <p id="news-details">
+              Our members are preparing capsule collections crafted from upcycled silk
+              and organic linen for the upcoming university exhibition.
+            </p>
+            <button id="news-toggle" class="home-control" type="button"
+              aria-controls="news-details" aria-expanded="false" hidden>Read More</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Member Reviews (Wireframe Page 8: Voices of Our Community using <div> for each review) -->
+      <section class="reviews" aria-labelledby="reviews-heading">
+        <h2 id="reviews-heading" class="section-title">Voices of Our Community</h2>
+        <div class="reviews-container">
+          <!-- Review 1 -->
+          <div class="review">
+            <div class="review-header">
+              <img
+                src="images/member1.jpg"
+                alt="Portrait of member Maha Al-Qahtani"
+                class="review-avatar"
+                loading="lazy"
+                width="88"
+                height="88">
+              <div class="review-author">
+                <h3>Maha Al-Qahtani</h3>
+                <p class="stars" role="img" aria-label="4 out of 5 stars">★★★★☆</p>
+              </div>
+            </div>
+            <h4>Styling Experience</h4>
+            <p class="review-quote">
+              "An amazing workshop! I learned how to create outfits that match my
+              personal style and coordinate colors with confidence."
+            </p>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review">
+            <div class="review-header">
+              <img
+                src="images/member2.jpg"
+                alt="Portrait of member Reem Al-Dosari"
+                class="review-avatar"
+                loading="lazy"
+                width="88"
+                height="88">
+              <div class="review-author">
+                <h3>Reem Al-Dosari</h3>
+                <p class="stars" role="img" aria-label="4 out of 5 stars">★★★★☆</p>
+              </div>
+            </div>
+            <h4>Sewing Basics Class</h4>
+            <p class="review-quote">
+              "A great experience for beginners. The workshop was fun, hands-on,
+              and easy to follow from threading the machine to finishing seams."
+            </p>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review">
+            <div class="review-header">
+              <img
+                src="images/member3.jpg"
+                alt="Portrait of member Lulwah Al-Sudairi"
+                class="review-avatar"
+                loading="lazy"
+                width="88"
+                height="88">
+              <div class="review-author">
+                <h3>Lulwah Al-Sudairi</h3>
+                <p class="stars" role="img" aria-label="4 out of 5 stars">★★★★☆</p>
+              </div>
+            </div>
+            <h4>Fashion Sketching Workshop</h4>
+            <p class="review-quote">
+              "I enjoyed learning new sketching techniques and expressing my
+              creativity through watercolor and ink croquis."
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <a href="index.html" class="logo-footer" aria-label="Needle and Muse - Home">
+          <span class="logo-text">NEEDLE &amp; MUSE</span>
+        </a>
+        <div class="footer-social">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+            </svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12" />
+            </svg>
+          </a>
+        </div>
+        <address class="footer-info">
+          <a href="mailto:hello@needlemuse.com">hello@needlemuse.com</a>
+          <span class="divider" aria-hidden="true">◆</span>
+          <a href="tel:+966110000000">+966 11 000 0000</a>
+          <span class="divider" aria-hidden="true">◆</span>
+          Riyadh, Saudi Arabia
+        </address>
+        <p class="footer-clock">Riyadh time <time id="footer-clock"></time></p>
+        <p class="footer-copy">
+          &copy; Needle and Muse 2026. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <button id="back-to-top" class="home-control" type="button" hidden>Back to Top ↑</button>
+  </body>
+</html>

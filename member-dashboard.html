@@ -1,198 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en-US" dir="ltr">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Needle &amp; Muse club member dashboard - your participation requests.">
-    <meta name="author" content="Needle & Muse">
-    <meta name="theme-color" content="#F2E8D5">
+    <meta name="description" content="Needle &amp; Muse club member dashboard - view your participation requests and upcoming workshop reminders.">
+    <meta name="author" content="Needle &amp; Muse">
+    <meta name="theme-color" content="#F5F0E5">
     <title>Member Dashboard | Needle &amp; Muse</title>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='3' y='70' font-family='Georgia' font-size='88' fill='%23B8894A'%3EN%3C/text%3E%3Ctext x='27' y='91' font-family='Georgia' font-size='88' fill='%23B8894A'%3EM%3C/text%3E%3Cpath d='M 5,58 C 17,42 31,49 42,58 C 52,67 60,55 69,44 C 77,34 84,30 92,30' fill='none' stroke='%23E88BA0' stroke-width='1.5'/%3E%3C/svg%3E">
-
-    <!-- Google Fonts -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20100%20100%27%3E%3Crect%20width%3D%27100%27%20height%3D%27100%27%20rx%3D%2714%27%20fill%3D%27%23EFE9DD%27%2F%3E%3Ctext%20x%3D%2715%27%20y%3D%2766%27%20font-family%3D%27Georgia%2Cserif%27%20font-size%3D%2754%27%20fill%3D%27%232B221E%27%3EN%3C%2Ftext%3E%3Ctext%20x%3D%2743%27%20y%3D%2778%27%20font-family%3D%27Georgia%2Cserif%27%20font-size%3D%2754%27%20fill%3D%27%232B221E%27%3EM%3C%2Ftext%3E%3Cline%20x1%3D%2748%27%20y1%3D%2712%27%20x2%3D%2748%27%20y2%3D%2786%27%20stroke%3D%27%237D1A2E%27%20stroke-width%3D%272.4%27%2F%3E%3Cellipse%20cx%3D%2748%27%20cy%3D%2716%27%20rx%3D%272%27%20ry%3D%274.5%27%20fill%3D%27none%27%20stroke%3D%27%237D1A2E%27%20stroke-width%3D%271.8%27%2F%3E%3Cpath%20d%3D%27M48%2C16%20C75%2C26%2075%2C44%2048%2C50%20C24%2C56%2026%2C82%2052%2C78%27%20fill%3D%27none%27%20stroke%3D%27%23A68548%27%20stroke-width%3D%271.8%27%2F%3E%3C%2Fsvg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Oswald:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&amp;family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet">
+    <script src="theme.js"></script>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <!-- ===== Skip Link (Accessibility) ===== -->
+  </head>
+  <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <!-- ==================================================
-         [1] NAVBAR
-         ================================================== -->
+    <!-- Navbar -->
     <header class="navbar">
-        <div class="nav-container">
-
-            <a href="index.html" class="logo-navbar" aria-label="Needle and Muse - Home">
-                <span class="logo-text">NEEDLE &amp; MUSE</span>
-            </a>
-
-            <nav aria-label="Main navigation">
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="offerings.html">Offerings</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="member-dashboard.html" class="active" aria-current="page">Member Dashboard</a></li>
-                    <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
-                </ul>
-            </nav>
-
-        </div>
-    </header>
-
-    <!-- ==================================================
-         [2] BREADCRUMB
-         ================================================== -->
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="index.html">Home</a>
-        <span aria-hidden="true">▶</span>
-        <span aria-current="page">Club Member Dashboard</span>
-    </nav>
-
-    <!-- ==================================================
-         [3] MAIN CONTENT
-         ================================================== -->    <main id="main-content">
-
-        <!-- YOUR TURN: write the dashboard content here
-             1) h1 page title
-             2) section: next-offering reminder (name + countdown + "Remind me later" button)
-             3) div: two links (Request to join / Evaluate) -> Flexbox section
-             4) table: thead + tbody, 6 rows, status inside a span with a class
-        -->
-<main id="main-content">
- 
-        <h1 class="page-title">My Participation Requests</h1>
- 
-        <!-- ===== Next offering reminder (countdown + snooze work in Phase 3) ===== -->
-        <section class="reminder-box" aria-labelledby="reminder-heading">
-            <div class="reminder-info">
-                <h2 id="reminder-heading">Your next offering: Pattern Making Class</h2>
-                <p class="countdown" id="countdown">05d : 12h : 30m</p>
-            </div>
-            <button type="button" class="btn-remind" id="remind-later">
-                Remind me later
-            </button>
-        </section>
- 
-        <!-- ===== Quick links (Flexbox section required by Phase 2) ===== -->
-        <nav class="dashboard-links" aria-label="Member actions">
-            <a href="join-request.html" class="btn-dark">Request to join an offering</a>
-            <a href="offering-evaluation.html" class="btn-dark">Evaluate an offering</a>
+      <div class="nav-container">
+        <a href="index.html" class="logo-navbar" aria-label="Needle and Muse - Home">
+          <span class="logo-text">NEEDLE &amp; MUSE</span>
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </label>
+        <nav class="nav-drawer" aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="offerings.html">Offerings</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="member-dashboard.html" class="active" aria-current="page">Member Dashboard</a></li>
+            <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+          </ul>
         </nav>
- 
-        <!-- ===== Previous participation requests (sample data) ===== -->
-        <section class="requests-section" aria-labelledby="requests-heading">
-            <h2 id="requests-heading" class="visually-hidden">Previous requests</h2>
- 
-            <table class="requests-table">
-                <caption class="visually-hidden">My previous participation requests and their status</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Offering Name</th>
-                        <th scope="col">Request Date</th>
-                        <th scope="col">Cost</th>
-                        <th scope="col">Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Fashion Illustration</td>
-                        <td><time datetime="2026-09-03">03/09/2026</time></td>
-                        <td>150 SAR</td>
-                        <td><span class="status status-completed">Completed</span></td>
-                    </tr>
-                    <tr>
-                        <td>Pattern Making Class</td>
-                        <td><time datetime="2026-10-05">05/10/2026</time></td>
-                        <td>200 SAR</td>
-                        <td><span class="status status-pending">Pending</span></td>
-                    </tr>
-                    <tr>
-                        <td>Sustainable Fashion Talk</td>
-                        <td><time datetime="2026-09-14">14/09/2026</time></td>
-                        <td>0 SAR</td>
-                        <td><span class="status status-declined">Declined</span></td>
-                    </tr>
-                    <tr>
-                        <td>Textile Design Workshop</td>
-                        <td><time datetime="2026-09-20">20/09/2026</time></td>
-                        <td>250 SAR</td>
-                        <td><span class="status status-completed">Completed</span></td>
-                    </tr>
-                    <tr>
-                        <td>Fashion Styling Basics</td>
-                        <td><time datetime="2026-10-10">10/10/2026</time></td>
-                        <td>120 SAR</td>
-                        <td><span class="status status-pending">Pending</span></td>
-                    </tr>
-                    <tr>
-                        <td>Costume Design</td>
-                        <td><time datetime="2026-09-28">28/09/2026</time></td>
-                        <td>180 SAR</td>
-                        <td><span class="status status-completed">Completed</span></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
- 
-   
-    </main>
+        <label for="nav-toggle" class="nav-backdrop"></label>
+      </div>
+    </header>
+    <main id="main-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">HOME</a>
+        <span aria-hidden="true">▶</span>
+        <span aria-current="page">CLUB MEMBER DASHBOARD</span>
+      </nav>
 
-    <!-- ==================================================
-         [5] FOOTER
-         ================================================== -->
-    <footer>
-        <div class="footer-content">
+      <header class="page-header">
+        <h1 class="page-title">My participation requests</h1>
+      </header>
 
-            <a href="index.html" class="logo-footer" aria-label="Needle and Muse - Home">
-                <span class="logo-text">NEEDLE &amp; MUSE</span>
-            </a>
-
-            <p class="footer-tagline">FASHION • CRAFT • MUSE</p>
-
-            <div class="footer-social" aria-label="Social media links">
-
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                        <rect x="2" y="2" width="20" height="20" rx="5"/>
-                        <circle cx="12" cy="12" r="4"/>
-                        <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
-                    </svg>
-                </a>
-
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
-                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                    </svg>
-                </a>
-
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
-                        <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12"/>
-                    </svg>
-                </a>
-
+      <div class="dashboard-container">
+        <!-- Next offering reminder (Wireframe Page 12) -->
+        <section class="reminder-box" id="reminder-box" aria-labelledby="reminder-heading">
+          <div class="reminder-info">
+            <h2 id="reminder-heading">Your next offering: Sewing Basics Class</h2>
+            <div class="reminder-countdown-row">
+              <p class="countdown" id="reminder-details">--d : --h : --m : --s</p>
             </div>
+          </div>
+          <button type="button" class="btn-remind" id="hide-reminder">
+            <span class="remind-icon" aria-hidden="true">&#9200;</span> Remind me later
+          </button>
+        </section>
+        <p class="snooze-feedback" id="snooze-feedback">
+          Reminder hidden for 24 hours.
+          <button type="button" class="undo-snooze" id="show-reminder">Show reminder again</button>
+        </p>
 
-            <address class="footer-info">
-                <a href="mailto:hello@needlemuse.com">hello@needlemuse.com</a>
-                <span class="divider" aria-hidden="true">◆</span>
-                <a href="tel:+966110000000">+966 11 000 0000</a>
-                <span class="divider" aria-hidden="true">◆</span>
-                Riyadh, Saudi Arabia
-            </address>
+        <!-- Quick links (CSS Flexbox section required by Phase 2) -->
+        <nav class="dashboard-links" aria-label="Member actions">
+          <a href="join-request.html" class="btn-primary">Request to join an offering</a>
+          <a href="offering-evaluation.html" class="btn-secondary">Evaluate an offering</a>
+        </nav>
 
-            <p class="footer-copy">&copy; 2026 Needle &amp; Muse. All rights reserved.</p>
+        <!-- Previous participation requests (Numeric Gregorian DD/MM/YYYY format) -->
+        <section class="requests-section" aria-labelledby="requests-heading">
+          <h2 id="requests-heading" class="sr-only">Previous requests</h2>
 
+          <div class="table-responsive">
+            <table class="requests-table">
+              <caption class="sr-only">My previous participation requests and their status</caption>
+              <thead>
+                <tr>
+                  <th scope="col">OFFERING NAME</th>
+                  <th scope="col">REQUEST DATE</th>
+                  <th scope="col">COST</th>
+                  <th scope="col">STATUS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="OFFERING NAME">Styling Experience</td>
+                  <td data-label="REQUEST DATE"><time datetime="2026-09-03">03/09/2026</time></td>
+                  <td data-label="COST">0 SAR (free)</td>
+                  <td data-label="STATUS"><span class="status status-completed">Completed</span></td>
+                </tr>
+                <tr>
+                  <td data-label="OFFERING NAME">Sewing Basics Class</td>
+                  <td data-label="REQUEST DATE"><time datetime="2026-10-05">05/10/2026</time></td>
+                  <td data-label="COST">100 SAR</td>
+                  <td data-label="STATUS"><span class="status status-pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td data-label="OFFERING NAME">Sustainable Fashion Workshop</td>
+                  <td data-label="REQUEST DATE"><time datetime="2026-09-14">14/09/2026</time></td>
+                  <td data-label="COST">200 SAR</td>
+                  <td data-label="STATUS"><span class="status status-declined">Declined</span></td>
+                </tr>
+                <tr>
+                  <td data-label="OFFERING NAME">Fashion Sketching Workshop</td>
+                  <td data-label="REQUEST DATE"><time datetime="2026-09-20">20/09/2026</time></td>
+                  <td data-label="COST">150 SAR</td>
+                  <td data-label="STATUS"><span class="status status-completed">Completed</span></td>
+                </tr>
+                <tr>
+                  <td data-label="OFFERING NAME">Sewing Basics Class</td>
+                  <td data-label="REQUEST DATE"><time datetime="2026-10-10">10/10/2026</time></td>
+                  <td data-label="COST">100 SAR</td>
+                  <td data-label="STATUS"><span class="status status-pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td data-label="OFFERING NAME">Fashion Design Basics</td>
+                  <td data-label="REQUEST DATE"><time datetime="2026-09-28">28/09/2026</time></td>
+                  <td data-label="COST">350 SAR</td>
+                  <td data-label="STATUS"><span class="status status-completed">Completed</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <a href="index.html" class="logo-footer" aria-label="Needle and Muse - Home">
+          <span class="logo-text">NEEDLE &amp; MUSE</span>
+        </a>
+        <div class="footer-social">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+            </svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12" />
+            </svg>
+          </a>
         </div>
+        <address class="footer-info">
+          <a href="mailto:hello@needlemuse.com">hello@needlemuse.com</a>
+          <span class="divider" aria-hidden="true">◆</span>
+          <a href="tel:+966110000000">+966 11 000 0000</a>
+          <span class="divider" aria-hidden="true">◆</span>
+          Riyadh, Saudi Arabia
+        </address>
+        <p class="footer-copy">
+          &copy; Needle and Muse 2026. All rights reserved.
+        </p>
+      </div>
     </footer>
-
-</body>
+    <script src="member-dashboard.js"></script>
+  </body>
 </html>
